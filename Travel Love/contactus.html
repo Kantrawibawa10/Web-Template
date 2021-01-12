@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="css/contactus.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<header>
+		<a href="#logo" class="logo">Travel Love<span>.</span><i class="fa fa-heart"></i></a>
+		<div class="menuToggle" onclick="toggelMenu();"></div>
+		<ul class="navigator">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="home.html">About</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+		</ul>
+	</header>
+
+	<section class="banner" id="banner">
+		<ul class="sci">
+			<li><a href="#"><img src="img/facebook.png" data-toggle="tooltip" title="Facebook"></a></li>
+			<li><a href="#"><img src="img/twitter.png" data-toggle="tooltip" title="Twitter"></a></li>
+			<li><a href="#"><img src="img/instagram.png" data-toggle="tooltip" title="Instagram"></a></li>
+		</ul>
+		<div class="content">
+			<h2>Always Choose Good</h2>
+			<p class="textcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud.</p>
+			<a href="#" class="btn1">Our Menu</a>
+		</div>
+	</section>
+
+
+	<div class="container">
+		<div class="form">
+			<div class="contact-info">
+				<h3 class="title">Let's get in touch</h3>
+				<p class="text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolorum adipisci recusandae praesentium dicta!
+				</p>
+
+			<div class="info">
+				<div class="information">
+					<img src="img/2.png" class="icon" alt="">
+					<p>27 Block B, Denpasar Timur, Bali</p>
+				</div>
+				<div class="information">
+					<img src="img/3.png" class="icon" alt="">
+					<p>TravelLove@gmail.com</p>
+				</div>
+				<div class="information">
+					<img src="img/1.png" class="icon" alt="">
+					<p>089745623319</p>
+				</div>
+			</div>
+				<div class="social-media">
+					<p>Connect with us :</p>
+				<div class="social-icons">
+					<a href="#">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-instagram"></i>
+					</a>
+				</div>
+				</div>
+			</div>
+			<div class="contact-form">
+				<form action="contactus.html">
+					<h3 class="title">Contact Us</h3>
+					<div class="input-container">
+						<input type="text" name="name" class="input">
+						<label for="">Username</label>
+						<span>Username</span>
+					</div>
+					<div class="input-container">
+						<input type="email" name="email" class="input">
+						<label for="">E-mail</label>
+						<span>E-mail</span>
+					</div>
+					<div class="input-container">
+						<input type="tel" name="phone" class="input">
+						<label for="">Phone</label>
+						<span>Phone</span>
+					</div>
+					<div class="input-container textarea">
+						<textarea name="message" class="input"></textarea>
+						<label for="">Message</label>
+						<span>Message</span>
+					</div>
+					<input type="submit" value="Kirim" class="btn">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-main-div">
+		<div class="footer-social-icons">
+			<ul>
+				<li><a href="" target="blank"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="" target="blank"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="" target="blank"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="" target="blank"><i class="fa fa-envelope"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="footer-menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+		</div>
+
+		<div class="footer-text">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut <br>enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in<br> reprehenderit in voluptate velit </p>
+		</div>
+	</div>
+
+	<div class="copyright">
+		<p>&#169Copyright | Development by <i class="fa fa-heart"></i> Travel Love Indonesia</p>
+	</div>
+
+	<script src="js/contactus.js"></script>
+	<script type="text/javascript">
+		window.addEventListener('scroll', function(){
+			const header = document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+
+		function toggelMenu(){
+			const menuToggle = document.querySelector('.menuToggle');
+			const navigator = document.querySelector('.navigator')
+			menuToggle.classList.toggle('active');
+			navigator.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>

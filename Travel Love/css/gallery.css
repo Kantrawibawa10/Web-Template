@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins=100,200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 1000px;
+}
+
+p{
+    font-weight: 300;
+    color: #fff;
+}
+
+.banner{
+    position: relative;
+    background: url("../img/banner/BgGallery.jpg");
+    top: 0;
+    right: 0;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; 
+}
+
+.banner .content{
+    position: relative;
+    max-width: 500px;
+    text-align: center;
+}
+
+.banner .content h2{
+    font-size: 3em;
+    color: #fff;
+}
+
+.banner .content .textcontent{
+    font-size: 10px;
+    color: #fff;
+}
+
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: orange;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    letter-spacing: 6px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s; 
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgb(0,0,0,0.05);
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo{
+    color: #111;
+}
+
+header .logo span{
+    color: orange;
+    font-size: 1em;
+}
+
+.fa-heart{
+    color: red;
+}
+
+header .navigator{
+    position: relative;
+    display: flex;
+}
+
+header .navigator li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigator li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    padding: 10px ;
+    border: 1px transparent;
+    transition: 1s;
+    margin-top: 10px;
+    margin-right: 3px;
+}
+
+header.sticky .navigator li a{
+    color: #111; 
+}
+
+header .navigator li a:hover{
+    background-color: black;
+    color: white;
+}
+
+.sci{
+    position: absolute;
+    top: 30%;
+    right: -30px;
+    transform: translate(-50%);
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background: #fff;
+}
+
+.sci li{
+    list-style: none; 
+}
+
+.sci li a{
+    display: inline-block;
+    transform: scale(0.5);
+}
+
+section{
+    padding: 100px;
+}
+
+
+.titletext{
+    color: black;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.title p{
+    text-align: center;
+    color: #000;
+}
+
+.titletext span{
+    color: orange;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+
+.gallery-content .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.gallery-content .content .box{
+    width: 350px;
+    margin: 30px;
+    padding: 30px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery-content .content .box .imgBx{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.gallery-content .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-content .content .box .text{
+    text-align: center;
+}
+
+.gallery-content .content .box .text p{
+    color: #666;
+    font-style: italic;
+}
+
+.gallery-content .content .box .text h3{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: orange;
+    font-weight: 600;
+}
+
+.footer-main-div{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: orange;
+    padding: 20px 0px;
+}
+
+.footer-social-icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+}
+
+.footer-social-icons ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.footer-social-icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.footer-social-icons ul li a{
+    color: #000;
+    font-size: 25px;
+    display: block;
+}
+
+.footer-social-icons ul li a i{
+    line-height: 50px;
+}
+
+.footer-menu{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.footer-menu ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.footer-menu ul li{
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.footer-menu ul li a{
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-text{
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.footer-text p{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    color: #fff;   
+}
+
+.copyright{
+    position: relative;
+    padding: 5px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.copyright p{
+    color: #111;
+    text-align: center;
+}
+
+
+@media (max-width: 991px){
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigator{
+        display: none;
+    }
+
+    header .navigator.active{
+        width: 100%;
+        height: calc(100% - 50px);
+        position: fixed;
+        top: 50px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    header .navigator li {
+        margin-left: 0;
+    }
+
+    header .navigator li a {    
+        color: #111;
+        font-size: 1.6em;
+    }
+
+    .menuToggle{
+        position: relative;
+        width: 33px;
+        height: 29px;
+        background-size: 25px;
+        background: url(../img/menu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active{
+        background: url("../img/close.png");
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .banner .content h2 {
+        font-size: 2.5em;
+        color: #fff;
+    }
+
+    .banner .content .textcontent {
+        font-size: 0.8em;
+    }
+
+}

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins=100,200,300,400,500,600,700,800,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+.content .box{
+	width: 220px;
+	height: 310px;
+	border-radius: 5px;
+	box-shadow: 2px 6px 30px rgba(0,0,0,0.1);
+	background-color: #f6f6f6;
+	margin: 30px; 
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.content .box p{
+	font-family: calibri;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	color: #3d3d3e;
+	justify-content: center;
+}
+
+.content .slide-details p:nth-child(1){
+	font-size: 23px;
+	font-weight: 700;
+}
+
+.content .slide-details p:nth-child(1){
+	font-size: 18px;
+}
+
+.content .slide-details p{
+	color: #fff;
+}
+
+.content .slide-details{
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translate(-50%,-20%);
+	width: 100%;
+}
+
+.content .user{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #3d3d3e;
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/*background*/
+.box-img01{
+	background-image: url("../img/slider/1.jpg");
+}
+
+.box-img02{
+	background-image: url("../img/slider/2.jpg");
+}
+
+.box-img03{
+	background-image: url("../img/slider/3.jpg");
+}
+
+.box-img04{
+	background-image: url("../img/slider/4.jpg");
+}
+
+.box-img05{
+	background-image: url("../img/slider/5.jpg");
+}
+
+.box-img06{
+	background-image: url("../img/slider/7.jpg");
+}
+
+
+/*user*/
+.user-img01{
+	background-image: url("../img/user/user1.jpg");
+}
+
+.user-img02{
+	background-image: url("../img/user/user1.jpg");
+}
+
+.user-img03{
+	background-image: url("../img/user/user1.jpg");
+}
+
+.user-img04{
+	background-image: url("../img/user/user1.jpg");
+}
+
+.user-img05{
+	background-image: url("../img/user/user1.jpg");
+}
+
+.user-img06{
+	background-image: url("../img/user/user1.jpg");
+}

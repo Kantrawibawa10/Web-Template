@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins=100,200,300,400,500,600,700,800,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+body{
+	min-height: 1000px;
+}
+
+p{
+	font-weight: 300;
+	color: #fff;
+}
+
+.banner{
+	position: relative;
+	width: 100%;
+	min-height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url("../img/background.jpg"); 
+	background-size: cover; 
+}
+
+
+.banner .content{
+	max-width: 900px;
+	text-align: center;
+}
+
+.banner .content h2{
+	font-size: 5em;
+	color: #fff;
+}
+
+.banner .content .textcontent{
+	font-size: 1em;
+	color: #fff;
+}
+
+.btn{
+	font-size: 1em;
+	color: #fff;
+	background: orange;
+	display: inline-block;
+	padding: 10px 30px;
+	margin-top: 20px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 0.5s;
+}
+
+.btn:hover{
+	letter-spacing: 6px;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s; 
+}
+
+header.sticky{
+	background: #fff;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgb(0,0,0,0.05);
+}
+
+header .logo{
+	color: #fff;
+	font-weight: 700;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+header.sticky .logo{
+	color: #111;
+}
+
+header .logo span{
+	color: orange;
+	font-size: 1em;
+}
+
+.fa-heart{
+	color: red;
+}
+
+header .navigator{
+	position: relative;
+	display: flex;
+}
+
+header .navigator li{
+	list-style: none;
+	margin-left: 30px;
+}
+
+header .navigator li a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+	padding: 3px ;
+ 	border: 1px transparent;
+ 	transition: 1s;
+ 	margin-top: 10px;
+  	margin-right: 3px;
+}
+
+header.sticky .navigator li a{
+	color: #111; 
+}
+
+header .navigator li a:hover{
+	background-color: black;
+    color: white;
+}
+
+header .fa fa-heart
+
+.sci{
+	position: absolute;
+	top: 30%;
+	right: -28px;
+	transform: translate(-50%);
+	width: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px;
+	background-color: #fff;
+}
+
+.sci li{
+	list-style: none; 
+}
+
+.sci li a{
+	display: inline-block;
+	transform: scale(0.5);
+}
+
+.sci li a img{
+	width: 50px;
+	height: 50px;
+}
+
+section{
+	padding: 100px;
+}
+
+.about{
+	position: relative;
+	width: 100%;
+	display: flex;
+} 
+
+.about .contentBx{
+	width: 50%;
+	padding: 20px;
+}
+
+.heading{
+	color: #111;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+.text{
+	color: #111;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.about .imgBx{
+	background: url(img/bali2.jpg);
+	width: 60%;
+	background-size: cover;
+	background-position: center; 
+}
+
+.about .imgBx img{
+	width: 100%;
+}
+
+.Destination{
+	background: #fff;
+	padding: 100px;
+	text-align: center;     
+}
+
+.Destination .container{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.heading2{
+	color: #111;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+.text2{
+	color: #111;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.box__img {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	margin-top: 200px;
+}
+
+img {
+	margin: 10px;
+	width: 400px;
+	height: 350px;
+	object-fit: cover;
+	-webkit-box-reflect:below 3px linear-gradient (transparent,transparent,#000);
+	transition: .5s;
+	border-radius: 3px;
+}
+
+.box__img:hover img {
+	opacity: .3;
+	filter: blur(1px);
+}
+
+.box__img img:hover {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateY(-20px);
+}
+
+.footer-main-div{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: orange;
+	padding: 20px 0px;
+}
+
+.footer-social-icons{
+	width: 100%;
+	height: auto;
+	margin: auto;
+
+}
+
+.footer-social-icons ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.footer-social-icons ul li{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0px 10px;
+	border-radius: 100%;
+	background: #fff;
+}
+
+.footer-social-icons ul li a{
+	color: #000;
+	font-size: 25px;
+	display: block;
+}
+
+.footer-social-icons ul li a i{
+	line-height: 50px;
+}
+
+.footer-menu{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.footer-menu ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.footer-menu ul li{
+	display: inline-block;
+	margin: 0px 15px;
+}
+
+.footer-menu ul li a{
+	font-size: 16px;
+	font-weight: 300;
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-text{
+	margin-top: 20px;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.footer-text p{
+	margin: auto;
+	position: relative;
+	text-align: center;
+	color: #fff;
+}
+
+.copyright{
+	position: relative;
+	padding: 5px;
+	background-color: #fff;
+	margin-top: 5px;
+}
+
+.copyright p{
+	color: #111;
+	text-align: center;
+}
+
+@media (max-width: 991px){
+	header,
+	header.sticky{
+		padding: 10px 20px;
+	}
+	header .navigator{
+		display: none;
+	}
+
+	header .navigator.active{
+		width: 100%;
+		height: calc(100% - 50px);
+		position: fixed;
+		top: 50px;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background: #fff;
+	}
+
+	header .navigator li {
+    	margin-left: 0;
+	}
+
+	header .navigator li a {    
+    	color: #111;
+    	font-size: 1.6em;
+	}
+
+	.menuToggle{
+		position: relative;
+		width: 33px;
+		height: 29px;
+		background-size: 25px;
+		background: url(../img/menu.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+	}
+
+	.menuToggle.active{
+		background: url("../img/close.png");
+		background-size: 25px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	header.sticky .menuToggle{
+		filter: invert(1);
+	}
+
+	section {
+    	padding: 20px;
+	}
+
+	.banner .content h2 {
+    	font-size: 2.5em;
+    	color: #fff;
+	}
+
+	.banner .content .textcontent {
+    	font-size: 0.8em;
+	}
+
+	.row {
+	    flex-direction: column;
+	}
+
+	.row .col50 {
+    	position: relative;
+    	width: 100%;
+	}
+
+	.row .col50 .imgBx {
+	    height: 300px;
+	    margin-top: 20px;
+	}
+
+}
